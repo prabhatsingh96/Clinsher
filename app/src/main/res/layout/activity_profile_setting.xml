@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivity.controller.profilemodule.ProfileSetting">
+
+    <RelativeLayout
+        android:id="@+id/relative_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/forgot_tool_bar_layout"
+            android:id="@+id/include_tool_profile_setting">
+        </include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/relative_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+   <!-- <RelativeLayout
+        android:id="@+id/relative_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/forgot_tool_bar_layout"
+            android:id="@+id/include_tool_profile_setting">
+        </include>
+    </RelativeLayout>-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_change_uname"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/change_user_name_profile_setting"
+            android:text="Change My UserName"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:padding="9dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=">"
+            android:textAllCaps="false"
+            android:textSize="28dp"
+            android:padding="9dp"
+            android:textColor="#41ABf8"
+            android:alpha=".7"
+            android:layout_marginLeft="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/btn_basic_pro_sett"
+        android:layout_below="@+id/card_change_uname"
+        android:layout_marginLeft="12dp"
+        android:text="Basics"
+        android:textSize="15dp"
+        android:textColor="#41ABF8"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_terms_use"
+        android:layout_below="@+id/btn_basic_pro_sett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_setting_terms_use"
+            android:clickable="true"
+            android:text="Terms of Use"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:padding="9dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=">"
+            android:textAllCaps="false"
+            android:textSize="28dp"
+            android:padding="9dp"
+            android:textColor="#41ABf8"
+            android:alpha=".7"
+            android:layout_marginLeft="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_privacy_policies"
+        android:layout_below="@+id/card_terms_use"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_setting_privacy_policy"
+            android:text="Privacy Policy"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:padding="9dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=">"
+            android:textAllCaps="false"
+            android:textSize="28dp"
+            android:padding="9dp"
+            android:textColor="#41ABf8"
+            android:alpha=".7"
+            android:layout_marginLeft="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_support_pro_sett"
+        android:layout_below="@+id/card_privacy_policies"
+        android:layout_marginLeft="12dp"
+        android:text="Support"
+        android:textSize="15dp"
+        android:layout_marginTop="7dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="11dp"
+        android:textColor="#41ABF8"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_des"
+        android:layout_below="@+id/btn_support_pro_sett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/profile_setting_dec"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:padding="9dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_account_pro_sett"
+        android:layout_below="@+id/card_des"
+        android:layout_marginLeft="12dp"
+        android:text="Account"
+        android:textSize="15dp"
+        android:layout_marginTop="7dp"
+        android:textColor="#41ABF8"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_change_password"
+        android:layout_below="@+id/btn_account_pro_sett"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Change My Password"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:padding="9dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=">"
+            android:textAllCaps="false"
+            android:textSize="28dp"
+            android:padding="9dp"
+            android:textColor="#41ABf8"
+            android:alpha=".7"
+            android:layout_marginLeft="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/delete_account"
+        android:layout_below="@+id/card_change_password"
+        android:layout_alignParentRight="true"
+        android:text="Delete Account"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:alpha=".5"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+            <Button
+                android:id="@+id/logout_profile_change"
+                android:layout_below="@+id/card_change_password"
+                android:layout_centerHorizontal="true"
+                android:layout_width="175dp"
+                android:text="Log out"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#ff2752"
+                android:textSize="18dp"
+                android:alpha=".7"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_btn_sign_up_with_google"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_container_change_user_name"
+        android:layout_below="@+id/relative_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+</RelativeLayout>

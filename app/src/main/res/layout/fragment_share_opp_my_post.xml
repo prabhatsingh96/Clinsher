@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.ShareOppMyPostFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/share_opp_fragment_four_card_view"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_share_opp_clockk_image"
+                android:src="@drawable/time_blue"
+                android:layout_width="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:id="@+id/tv_share_opp_date_text"
+                android:layout_marginLeft="30dp"
+                android:text="21/11/2017"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/tv_middle_text_four_frg_share_opp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_share_opp_leagle_assistentt_text"
+                    android:text="Legal Assistant"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:alpha=".8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_share_opp_law_firmm_text"
+                    android:layout_gravity="center"
+                    android:text="Law Firm - Luxembourg-Permament-Full Time"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/tv_share_opp_leagle_assistentt_text"
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_share_opp_moree"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:src="@drawable/more_blue"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp" />
+
+            <RelativeLayout
+                android:id="@+id/job_seaker_layout"
+                android:layout_below="@+id/tv_middle_text_four_frg_share_opp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_custom_signup_with_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_seekers_text"
+                    android:text="Seekers you have selected"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/im_eye_blue"
+                    android:layout_toRightOf="@+id/tv_seekers_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/eye_blue"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_sekers_image"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_seekers_text"
+                    android:layout_marginTop="35dp"
+                    android:weightSum="6"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginTop="70dp"
+                android:id="@+id/btn_share_opp_my_post"
+                android:text="Share Oppurtunity"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/btn_custom_signup_with_linkedin"
+                android:layout_below="@+id/job_seaker_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/profile_bottom_layout"
+                    android:id="@+id/my_post_bottom_layout" ></include>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</RelativeLayout>

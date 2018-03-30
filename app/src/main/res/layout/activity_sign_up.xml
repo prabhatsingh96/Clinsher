@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivity.controller.signup.SignUpActivity">
+
+
+    <ScrollView
+        android:id="@+id/sv_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <RelativeLayout
+       android:id="@+id/action_bar_container"
+       android:background="#0074BB"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/create_acc"
+          android:text="Create your account"
+          android:textSize="18dp"
+          android:padding="20dp"
+          android:textColor="#ffffff"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+
+
+   <ImageView
+       android:src="@drawable/profile_placholder"
+       android:id="@+id/profile_place_holder"
+       android:layout_below="@+id/action_bar_container"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="30dp"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+   <RelativeLayout
+       android:id="@+id/sign_up_container"
+       android:layout_below="@+id/profile_place_holder"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:id="@+id/linear_layout_name"
+           android:weightSum="2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+      <EditText
+          android:id="@+id/et_firstt_name"
+          android:hint="* First Name"
+          android:layout_weight="1"
+          android:padding="15dp"
+         android:singleLine="true"
+          android:layout_toLeftOf="@+id/et_last_name"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          />
+      <EditText
+          android:id="@+id/et_lastt_name"
+          android:layout_alignParentRight="true"
+          android:maxLines="1"
+          android:layout_marginLeft="35dp"
+          android:hint="* Last Name"
+          android:padding="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+       </LinearLayout>
+      <EditText
+          android:id="@+id/et_signupp_email"
+          android:layout_below="@+id/linear_layout_name"
+          android:padding="15dp"
+          android:hint="* Email"
+          android:maxLines="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/et_signupp_password"
+          android:layout_below="@+id/et_signupp_email"
+          android:padding="15dp"
+          android:hint="* Password"
+          android:maxLines="1"
+          android:inputType="textPassword"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/et_signup_confirmm_password"
+          android:layout_below="@+id/et_signupp_password"
+          android:padding="15dp"
+          android:maxLines="1"
+          android:hint="* Confirm password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+
+   </RelativeLayout>
+
+   <TextView
+       android:layout_marginRight="20dp"
+       android:id="@+id/tv_required_field"
+       android:layout_below="@id/sign_up_container"
+       android:text="* All fields are required"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="6dp"
+       android:textColor="#2dff66"
+       android:textSize="12dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+  <Button
+      android:id="@+id/btn_sign_up"
+      android:layout_below="@id/tv_required_field"
+      android:background="@drawable/sign_up_custom"
+      android:textColor="#41ABF8"
+      android:textSize="13dp"
+      android:padding="6dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="6dp"
+      android:text="Sign Up"
+      android:gravity="center"
+      android:layout_width="300dp"
+      android:layout_marginLeft="50dp"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:layout_marginRight="40dp"
+       android:id="@+id/linear_layout_or"
+       android:layout_below="@+id/btn_sign_up"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:weightSum="3"
+       android:layout_marginTop="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <View
+          android:id="@+id/tv_or_line_start"
+          android:layout_width="match_parent"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          android:layout_height="1dp"
+          android:background="#000000"
+          android:layout_below="@+id/btn_sign_up"
+          />
+      <TextView
+          android:id="@+id/or"
+          android:text="Or"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:layout_marginLeft="40dp"
+          android:textSize="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <View
+          android:id="@+id/tv_or_line_last"
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:layout_height="1dp"
+          android:background="#000000"
+          android:layout_marginLeft="10dp"
+          android:layout_below="@+id/btn_sign_up"
+          />
+
+   </LinearLayout>
+
+   <Button
+       android:layout_marginRight="45dp"
+       android:id="@+id/sign_in_with_linkdin"
+       android:layout_below="@id/linear_layout_or"
+       android:background="@drawable/btn_custom_signup_with_linkedin"
+       android:textColor="#0074BB"
+       android:textSize="15dp"
+       android:padding="6dp"
+       android:layout_marginTop="15dp"
+       android:text="Sign Up with Linkedin"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_marginLeft="45dp"
+       android:layout_centerHorizontal="true"
+       android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginRight="45dp"
+        android:id="@+id/sign_in_with_google"
+        android:layout_below="@id/sign_in_with_linkdin"
+        android:background="@drawable/custom_btn_sign_up_with_google"
+        android:textColor="#F2250A"
+        android:textSize="15sp"
+        android:padding="6dp"
+        android:layout_marginTop="15dp"
+        android:text="Sign Up with Google"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/do_not_show_cantact"
+        android:layout_below="@id/sign_in_with_google"
+        android:text="We don't post or show messages to your contact"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/last_text"
+        android:layout_below="@id/do_not_show_cantact"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="By Signing up, you agree to our "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_terms"
+        android:layout_toRightOf="@+id/last_text"
+        android:text="Terms of use"
+        android:textSize="11dp"
+        android:textColor="#41ABF8"
+        android:layout_below="@+id/do_not_show_cantact"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/last_text_two"
+        android:layout_below="@id/last_text"
+        android:text="Already have an Account!"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="75dp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/login_at_have_an_acc"
+    android:layout_toRightOf="@+id/last_text_two"
+    android:layout_below="@id/last_text"
+    android:text="LogIn"
+    android:textSize="12dp"
+    android:textColor="#41ABF8"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp" />
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

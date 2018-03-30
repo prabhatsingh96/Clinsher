@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cancel_current_position"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:tint="@color/colorWhite"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/about_your_summary"
+            android:text="Wirte about your summary"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:layout_below="@+id/about_your_summary"
+            android:id="@+id/et_text_skill"
+            android:hint="You can write about you, your skills, current experience,achivements, your dream jobs... "
+            android:padding="18dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="200"
+            android:background="@drawable/add_summary_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/left_word"
+            android:layout_below="@+id/et_text_skill"
+           android:layout_alignParentRight="true"
+            android:text="450 Left"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_below="@+id/left_word"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sign_up_custom"
+            android:text="Done"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

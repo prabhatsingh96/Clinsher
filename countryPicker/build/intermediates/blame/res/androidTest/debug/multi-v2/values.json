@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,14",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,104,152,203,6294,6337,6628",
+                        "endLines": "2,3,4,5,6,13,16",
+                        "endColumns": "48,47,50,6090,42,12,12",
+                        "endOffsets": "99,147,198,6289,6332,6623,6783"
+                    }
+                }
+            ]
+        }
+    ]
+}

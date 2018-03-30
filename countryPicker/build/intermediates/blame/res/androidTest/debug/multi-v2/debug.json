@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,14",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,104,152,203,6294,6337,6628",
+                        "endLines": "2,3,4,5,6,13,16",
+                        "endColumns": "48,47,50,6090,42,12,12",
+                        "endOffsets": "99,147,198,6289,6332,6623,6783"
+                    }
+                }
+            ]
+        }
+    ]
+}

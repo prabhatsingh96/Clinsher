@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fluper.clinsher">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+
+        <activity
+            android:name=".appActivity.controller.startapplication.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".appActivity.controller.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.signup.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".appActivity.controller.authentication.LogInActivity"
+            android:screenOrientation="portrait"
+
+
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+               android:theme="@style/AppTheme"
+
+            android:label="@string/app_name"
+
+            />
+        <activity
+            android:name=".appActivity.controller.authentication.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.authentication.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.profilemodule.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.profilemodule.ProfileSetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.signup.KnowMoreCurrentJobActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.signup.KnowMoreAboutYouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.profilemodule.IncompleteProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.shareopp.ShareOpportunityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.myjob.MyJobActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        />
+        <activity
+            android:name=".appActivity.controller.match.MatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity
+            android:name=".appActivity.controller.profilemodule.PricacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        />
+        <activity
+            android:name=".appActivity.controller.profilemodule.TermsOfUseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+        <activity android:name=".appActivity.controller.match.MatchProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreen" />
+
+    </application>
+
+</manifest>

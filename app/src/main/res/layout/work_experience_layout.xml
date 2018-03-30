@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cancel_current_position"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:tint="@color/colorWhite"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/work_experience_text"
+            android:text="Work Experience"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_job_title"
+            android:layout_below="@+id/work_experience_text"
+            android:hint="Job Title"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_compnay_name"
+            android:layout_below="@+id/et_job_title"
+            android:hint="Compnay Name"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_city_name"
+            android:layout_below="@+id/et_compnay_name"
+            android:hint="City"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear_contaner_date"
+            android:layout_below="@+id/et_city_name"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_starting_date"
+                android:layout_weight="1"
+                android:hint="Starting Date"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_ending_date"
+                android:layout_weight="1"
+                android:hint="United Kingdom"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_below="@id/linear_contaner_date"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sign_up_custom"
+            android:text="Done"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

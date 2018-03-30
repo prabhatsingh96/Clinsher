@@ -1,0 +1,548 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.RateYourCompanyFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <!-- <RelativeLayout
+                android:id="@+id/company_rate_tool_layout"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <ImageView
+                    android:id="@+id/btn_back_rate_compny"
+                    android:src="@drawable/back"
+                    android:padding="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp" />
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="Rate Your Company"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:textSize="19dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+-->
+            <TextView
+                android:id="@+id/tv_note_compnay_rate"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:textSize="17sp"
+                android:text="Rate each value on emoticon, where means doing a great job and means needs a lot of improvement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_work_life_balance"
+                android:layout_below="@+id/tv_note_compnay_rate"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_work_life_balance"
+                    android:text="Work Life Balance"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/wrk_life_emozi_layout"
+                    android:layout_below="@+id/tv_work_life_balance"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_management"
+                android:layout_below="@+id/company_rate_card_work_life_balance"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_management"
+                    android:text="Management"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/management_emozi_layout"
+                    android:layout_below="@+id/tv_management"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_work_atmosphere"
+                android:layout_below="@+id/company_rate_card_management"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_work_atmosphere"
+                    android:text="Work Atmosphere"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/atmosphere_emozi_layout"
+                    android:layout_below="@+id/tv_work_atmosphere"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_raise_and_permotion"
+                android:layout_below="@+id/company_rate_card_work_atmosphere"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_raise_and_permotion"
+                    android:text="Raise and Permotion"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/raise_and_permotion_emozi_layout"
+                    android:layout_below="@+id/tv_raise_and_permotion"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_flexibility"
+                android:layout_below="@+id/company_rate_card_raise_and_permotion"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_flexibility"
+                    android:text="Flexibility"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/flexibility_emozi_layout"
+                    android:layout_below="@+id/tv_flexibility"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_rate_card_learning_and_training"
+                android:layout_below="@+id/company_rate_card_flexibility"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_learning_and_training"
+                    android:text="Learning and Training"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/learning_and_training_emozi_layout"
+                    android:layout_below="@+id/tv_learning_and_training"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smile_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/normal_emoji_grey"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sad_emoji_red"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/happy_emoji_blue"
+                        android:tint="#36f2bd"
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <Button
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:id="@+id/company_rate_btn_continoue"
+                android:layout_below="@+id/company_rate_card_learning_and_training"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/sign_up_custom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

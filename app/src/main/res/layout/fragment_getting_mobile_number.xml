@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.signup.GettingMobileNumberFragment">
+
+
+    <TextView
+        android:editable="false"
+        android:padding="15dp"
+        android:id="@+id/et_phone_number_text"
+        android:layout_marginTop="@dimen/sp_22"
+        android:text="Enter your phone number"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="10dp"
+        android:alpha=".8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:editable="false"
+        android:clickable="true"
+        android:padding="15dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:id="@+id/et_country_code_text"
+        android:layout_below="@+id/et_phone_number_text"
+        android:text="Choose Country Code"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="10dp"
+        android:alpha=".8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+
+        android:id="@+id/et_country_code"
+        android:layout_below="@+id/et_country_code_text"
+        android:hint="Code"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="10dp"
+        android:alpha=".8"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_country_code_text"
+            android:layout_toRightOf="@+id/et_country_code"
+            android:background="@color/colorBlack"
+            android:alpha=".3"
+            ></View>
+    <EditText
+
+        android:id="@+id/et_mobile_number"
+        android:layout_below="@+id/et_country_code_text"
+        android:layout_toRightOf="@+id/et_country_code"
+        android:hint="mobile number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:alpha=".8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_mobile_note"
+        android:layout_below="@+id/et_mobile_number"
+        android:layout_marginTop="10dp"
+        android:text="This number will not be added to your account"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_continoue_getting_mobile"
+        android:layout_below="@+id/tv_mobile_note"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_btn_custom"
+        android:text="Continue"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_note_getting_mobile"
+        android:layout_below="@+id/btn_continoue_getting_mobile"
+        android:layout_marginTop="18dp"
+        android:text="Make sure you can recive a text message at this number so we can send a code."
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View>
+
+</RelativeLayout>

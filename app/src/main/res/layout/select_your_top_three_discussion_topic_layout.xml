@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="22dp"
+    android:layout_marginLeft="22dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cancel_current_position"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:tint="@color/colorWhite"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/work_experience_text"
+            android:text="Select your top 3 discussion topic"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/single_keyword_text"
+            android:layout_below="@+id/work_experience_text"
+            android:padding="18dp"
+            android:layout_marginTop="11dp"
+            android:hint="Enter a single keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_one_discussion_topic"
+            android:layout_below="@+id/single_keyword_text"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_24"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Learning &amp; Formation"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Application Process"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="7dp"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_two_discussion_topic"
+            android:layout_below="@+id/linear_layout_one_discussion_topic"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_18"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Work Schedule"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Interview Process"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="7dp"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_three_discussion_topic"
+            android:layout_below="@+id/linear_layout_two_discussion_topic"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_18"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Benifit in kind"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Vacation"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="7dp"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_four_discussion_topic"
+            android:layout_below="@+id/linear_layout_three_discussion_topic"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_18"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Values"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="CEO"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="7dp"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_five_discussion_topic"
+            android:layout_below="@+id/linear_layout_four_discussion_topic"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_18"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Premises"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_custom"
+                android:text="Experties"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="7dp"
+                android:alpha=".7"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mind_set_text"
+            android:layout_below="@id/linear_layout_five_discussion_topic"
+            android:text="Mind Set"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/select_topic_texttt"
+            android:layout_below="@+id/mind_set_text"
+            android:editable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp"
+            android:text="Application Process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_done_on_discussion_topic"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/sign_up_custom"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:textColor="#41ABF8"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>

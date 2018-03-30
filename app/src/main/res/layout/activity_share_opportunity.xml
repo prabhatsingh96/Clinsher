@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.ShareOpportunityActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_tool_layout_share_opp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/share_opp_tool_layout"
+            android:id="@+id/include_tool_share_opp">
+        </include>
+
+    </RelativeLayout>
+
+
+     <RelativeLayout
+         android:id="@+id/share_opp_fragment_container"
+         android:layout_below="@+id/relative_tool_layout_share_opp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     </RelativeLayout>
+
+
+
+</RelativeLayout>

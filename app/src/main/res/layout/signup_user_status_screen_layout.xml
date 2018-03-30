@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3c2f3c"
+    android:alpha=".9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/anonymous_poster_text"
+        android:layout_marginTop="35dp"
+        android:text="Be an ANONYMOUS poster"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_below="@+id/anonymous_poster_text"
+        android:layout_marginTop="26dp"
+        android:text="Share and give your valuable feedback on a job opportuninty you are aware of."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/case_text"
+        android:layout_below="@+id/feedback_text"
+        android:layout_marginTop="37dp"
+        android:text="In which case I can disclose an opportunity ?"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/job_quiter_text"
+        android:layout_below="@+id/case_text"
+        android:layout_marginTop="37dp"
+        android:text="I AM A JOB QUITTER."
+        android:textSize="19sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/desc_job_quiter_text"
+        android:layout_below="@+id/job_quiter_text"
+        android:layout_marginTop="28dp"
+        android:text="I voulentry quit my job and I am aware that my company will need to find the someone else to fill the role. "
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/job_insider_text"
+        android:layout_below="@+id/desc_job_quiter_text"
+        android:layout_marginTop="37dp"
+        android:text="I AM AN INSIDER"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_below="@+id/desc_job_quiter_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/desc_job_insider_text"
+        android:layout_below="@+id/job_insider_text"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_status_dialog_share"
+        android:textSize="16sp"
+       android:layout_marginLeft="30dp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/btn_share_opportunity_alert_dialog"
+        android:layout_below="@+id/desc_job_insider_text"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/btn_share_opportunity_on_dialog_layout"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_marginBottom="7dp"
+        android:text="Share Opportunity"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

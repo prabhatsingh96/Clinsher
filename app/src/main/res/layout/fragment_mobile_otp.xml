@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.signup.MObileOtpFragment">
+
+
+    <TextView
+        android:id="@+id/tv_show_text_rcv"
+        android:text="Enter the code recive by sms"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:alpha=".8"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="5"
+        android:layout_below="@+id/tv_show_text_rcv"
+        android:layout_marginTop="34dp">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_one"
+             android:layout_weight="1"
+            android:maxLength="1"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/btn_custom_signup_with_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_two"
+            android:singleLine="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:imeOptions="actionGo"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_custom_signup_with_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/et_three"
+            android:maxLength="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_custom_signup_with_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/et_four"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/btn_custom_signup_with_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/et_five"
+            android:maxLength="1"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/btn_custom_signup_with_linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_below="@+id/otp_layout"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="70dp"
+        android:text="Verify"
+        android:textColor="@color/colorWhite"
+        android:textSize="19dp"
+        android:background="@drawable/login_btn_custom"
+        android:textAllCaps="false"
+        android:layout_marginLeft="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_resend_otp"
+        android:layout_below="@+id/btn_verify"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="70dp"
+        android:text="Resend SMS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:layout_marginLeft="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View>
+
+
+</RelativeLayout>

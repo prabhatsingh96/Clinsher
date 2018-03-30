@@ -1,0 +1,339 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.match.MatchProfileFragmmentOne">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:rotation="-6"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/info_layout"
+                android:layout_marginTop="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:background="#f2150b"
+                    android:id="@+id/card_user_detail_match_profile"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="@string/profile_info"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:background="#000000"
+                        >
+
+                    </View>
+
+
+                    <TextView
+                        android:id="@+id/match_profile_decription_text"
+                        android:layout_marginTop="175dp"
+                        android:layout_marginBottom="18dp"
+                        android:text="Regularly advise leading assests and funds managers, on leagle and
+                regularly aspects. in the framework of structuring luxembourg funds for pan europian
+                funds and investment. Prepration of registration files for Europian country under
+                the AIFMD regulation."
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/discussion_topic_match_profile"
+                    android:layout_below="@+id/card_user_detail_match_profile"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    app:cardCornerRadius="8dp"
+                    android:background="#f2150b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/discussiondion_topic_text"
+                            android:text="Your top 3 discussion topic"
+                            android:textSize="14dp"
+                            android:textColor="#41ABF8"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/btn_rel_layout"
+                            android:layout_below="@+id/discussiondion_topic_text"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginBottom="18dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Mindset"
+                                android:clickable="true"
+                                android:textSize="16dp"
+                                android:id="@+id/btn_mindset"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:background="@drawable/sign_up_custom"
+                                android:layout_width="70dp"
+                                android:layout_height="32dp" />
+
+                            <TextView
+
+                                android:layout_marginLeft="12dp"
+                                android:text="Values"
+                                android:id="@+id/values"
+                                android:layout_toRightOf="@+id/btn_mindset"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:background="@drawable/sign_up_custom"
+                                android:layout_width="60dp"
+                                android:layout_height="32dp" />
+
+
+                            <TextView
+                                android:text="Application Process"
+                                android:id="@+id/application_process"
+                                android:layout_toRightOf="@+id/values"
+                                android:clickable="true"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:background="@drawable/sign_up_custom"
+                                android:layout_width="155dp"
+                                android:layout_height="32dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/work_exp_match_profile"
+                    android:layout_below="@+id/discussion_topic_match_profile"
+                    android:layout_marginTop="16dp"
+                    android:background="#f2150b"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/work_Exp_topic_text"
+                            android:text="Work Experience"
+                            android:textSize="16dp"
+                            android:textColor="#41ABF8"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/sloom_match_profile_text"
+                            android:layout_below="@+id/work_Exp_topic_text"
+                            android:text="Sloom"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/et_sloom_text"
+                            android:layout_below="@+id/sloom_match_profile_text"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="16dp"
+                            android:text= "Lawyer Investment fund-Geneva-2 yr-1 mo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/socgi_match_profile_text"
+                            android:layout_below="@+id/et_sloom_text"
+                            android:text="Socgi"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/et_socgi_text"
+                            android:layout_below="@+id/socgi_match_profile_text"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="16dp"
+                            android:text = "Internship peris 2 mo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:id="@+id/blegi_match_profile_text"
+                            android:layout_below="@+id/et_socgi_text"
+                            android:text="Blegi"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/et_blegi_text"
+                            android:layout_below="@+id/blegi_match_profile_text"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="16dp"
+                            android:text="Internship peris 6 mo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/education_match_profile"
+                    android:layout_below="@+id/work_exp_match_profile"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:background="#f2150b"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/education_topic_text"
+                            android:text="Education"
+                            android:textSize="16dp"
+                            android:textColor="#41ABF8"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/descrates_university_match_profile_text"
+                            android:layout_below="@+id/education_topic_text"
+                            android:text="Descarates University"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/et_master_text"
+                            android:layout_below="@+id/descrates_university_match_profile_text"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="16dp"
+                            android:text="Master || international law 2012-2014"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/emloyen_match_profile_text"
+                            android:layout_below="@+id/et_master_text"
+                            android:text="Emloyen"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/et_emloyen_text"
+                            android:layout_below="@+id/emloyen_match_profile_text"
+                            android:layout_marginLeft="14dp"
+                            android:textSize="16dp"
+                            android:text="Lisence international law 2009-2011"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+            <!-- <android.support.v4.widget.CircleImageView
+                 android:src="@drawable/profile_placholder"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="40dp"
+                 android:layout_width="125dp"
+                 android:layout_height="125dp" />-->
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp"
+                android:src="@drawable/profile_placholder" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

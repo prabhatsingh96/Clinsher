@@ -1,0 +1,530 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.ShareOppFragmentfour">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/share_opp_fragment_four_card_view"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_share_opp_clock_image"
+                    android:src="@drawable/time_blue"
+                    android:layout_width="18dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="18dp" />
+                <TextView
+                    android:id="@+id/tv_share_opp_today_text"
+                    android:layout_marginLeft="30dp"
+                    android:text="Today"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/tv_middle_text_four_frg_share_opp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_share_opp_leagle_assistent_text"
+                    android:text="Legal Assistant"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:alpha=".8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_share_opp_law_firm_text"
+                    android:layout_gravity="center"
+                    android:text="Law Firm"
+                    android:textSize="19dp"
+                    android:layout_below="@+id/tv_share_opp_leagle_assistent_text"
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_share_opp_more"
+                    android:layout_marginTop="7dp"
+                    android:clickable="true"
+                    android:src="@drawable/more_blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp" />
+
+
+                <RelativeLayout
+
+                    android:id="@+id/share_opp_fragment_four_content"
+                    android:layout_below="@+id/tv_middle_text_four_frg_share_opp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_share_opp_fragment_four_location"
+                        android:src="@drawable/location_blue"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/tv_share_opp_fragment_four_location_text"
+                        android:layout_toRightOf="@+id/iv_share_opp_fragment_four_location"
+                        android:layout_marginLeft="18dp"
+                        android:text="Luxembourg, luxembourg"
+                        android:textColor="@color/colorBlack"
+                        android:alpha=".7"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_share_opp_fragment_four_permament_fulltime"
+                        android:layout_below="@+id/iv_share_opp_fragment_four_location"
+                        android:src="@drawable/list_blue"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/tv_share_opp_fragment_four_permament_fulltime_text"
+                        android:layout_toRightOf="@+id/iv_share_opp_fragment_four_permament_fulltime"
+                        android:layout_below="@+id/iv_share_opp_fragment_four_location"
+                        android:layout_marginLeft="18dp"
+                        android:text="Permament, Full Time"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/colorBlack"
+                        android:alpha=".7"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_below="@+id/iv_share_opp_fragment_four_permament_fulltime"
+                        android:background="@color/colorBlack"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"/>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_four_share_opp_description"
+                        android:layout_below="@+id/view"
+                        android:layout_marginTop="15dp"
+                        android:text="Description"
+                        android:textSize="19dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/b"
+                        android:layout_below="@+id/tv_fragment_four_share_opp_description"
+                        android:background="@drawable/black_bubble_custom"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                    <TextView
+                        android:id="@+id/tv_b_text"
+                        android:layout_below="@+id/tv_fragment_four_share_opp_description"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="16dp"
+                        android:text="Provide leagle advise to the audit department."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/bb"
+                        android:layout_below="@+id/b"
+                        android:background="@drawable/black_bubble_custom"
+                        android:layout_marginTop="13dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                    <TextView
+                        android:id="@+id/tv_bb_text"
+                        android:layout_below="@+id/b"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="16dp"
+                        android:text="Issue leagle opinion."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/bbb"
+                        android:layout_below="@+id/bb"
+                        android:background="@drawable/black_bubble_custom"
+                        android:layout_marginTop="13dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                    <TextView
+                        android:id="@+id/tv_bbb_text"
+                        android:layout_below="@+id/bb"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="16dp"
+                        android:text="Advise institunal clients."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <ImageView
+                        android:id="@+id/bbbb"
+                        android:layout_below="@+id/bbb"
+                        android:background="@drawable/black_bubble_custom"
+                        android:layout_marginTop="13dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                    <TextView
+                        android:id="@+id/tv_bbbb_text"
+                        android:layout_below="@+id/bbb"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="16dp"
+                        android:text="Negociation with CSSF."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/bbbbb"
+                        android:layout_below="@+id/bbbb"
+                        android:background="@drawable/black_bubble_custom"
+                        android:layout_marginTop="13dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                    <TextView
+                        android:id="@+id/tv_bbbbb_text"
+                        android:layout_below="@+id/bbbb"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="16dp"
+                        android:text="Researc leagle issues."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:id="@+id/view_two"
+                        android:layout_below="@+id/bbbbb"
+                        android:background="@color/colorBlack"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"/>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_four_share_opp_facts"
+                        android:layout_below="@+id/view_two"
+                        android:layout_marginTop="15dp"
+                        android:text="Facts"
+                        android:textSize="19dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_salary_text"
+                        android:layout_below="@+id/tv_fragment_four_share_opp_facts"
+                        android:text="salary"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_salary_value_text"
+                        android:layout_below="@+id/tv_fragment_four_share_opp_facts"
+                        android:text="$$$$"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/tv_four_fragment_share_opp_salary_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_sector_text"
+                        android:layout_below="@+id/tv_four_fragment_share_opp_salary_text"
+                        android:text="Sector"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_banking_text"
+                        android:layout_below="@+id/tv_four_fragment_share_opp_salary_text"
+                        android:text="Banking"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/tv_four_fragment_share_opp_sector_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_experience_text"
+                        android:layout_below="@+id/tv_four_fragment_share_opp_sector_text"
+                        android:text="Experience"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_four_fragment_share_opp_experience_value"
+                        android:layout_below="@+id/tv_four_fragment_share_opp_sector_text"
+                        android:text="1-3 year Experience"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/tv_four_fragment_share_opp_sector_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:id="@+id/view_three"
+                        android:layout_below="@+id/tv_four_fragment_share_opp_experience_text"
+                        android:background="@color/colorBlack"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"/>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_four_share_opp_reviews"
+                        android:layout_below="@+id/view_three"
+                        android:layout_marginTop="15dp"
+                        android:text="Reviews"
+                        android:textSize="19dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fragment_four_share_opp"
+                        android:layout_below="@+id/tv_fragment_four_share_opp_reviews"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                           <ImageView
+                               android:src="@drawable/happy_emoji_blue"
+                               android:layout_width="20dp"
+                               android:layout_height="20dp" />
+                           <TextView
+                               android:text="work life balance"
+                               android:textColor="@color/colorBlack"
+                               android:alpha=".8"
+                               android:textSize="16dp"
+                               android:layout_alignParentRight="true"
+                               android:layout_marginRight="10dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                       </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/smile_emoji_blue"
+                            android:tint="#36f2bd"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:text="salary"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" /></RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lll_fragment_four_share_opp"
+                        android:layout_below="@+id/ll_fragment_four_share_opp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/happy_emoji_blue"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+                            <TextView
+                                android:text="Atmosphere work"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:textSize="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/smile_emoji_blue"
+                                android:tint="#36f2bd"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+                            <TextView
+                                android:text="Management"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" /></RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llll_fragment_four_share_opp"
+                        android:layout_below="@+id/lll_fragment_four_share_opp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/happy_emoji_blue"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+                            <TextView
+                                android:text="Raise &amp;permotion"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:textSize="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/smile_emoji_blue"
+                                android:tint="#36f2bd"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+                            <TextView
+                                android:text="Learning &amp;training"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorBlack"
+                                android:alpha=".8"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" /></RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/btn_share_opp_fragment_four_post_now"
+                        android:layout_below="@+id/llll_fragment_four_share_opp"
+                        android:text="Post Now"
+                        android:layout_marginTop="35dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"
+                        android:background="@drawable/sign_up_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_below="@id/share_opp_fragment_four_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <include layout="@layout/profile_bottom_layout"
+                android:id="@+id/include_bottom_layout_share_opp_fragment_four"
+
+                ></include></RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

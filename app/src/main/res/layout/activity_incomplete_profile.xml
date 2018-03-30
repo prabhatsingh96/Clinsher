@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.profilemodule.IncompleteProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/incomplete_profile_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/profile_tool_bar"
+                    android:id="@+id/include_incomplete_profile_tool"
+                    ></include>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/discussion_topic"
+                android:layout_below="@+id/incomplete_profile_tool_bar"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/discussiondion_topic_text"
+                        android:text="Your top 3 discussion topic"
+                        android:textSize="14dp"
+                        android:textColor="#41ABF8"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/edit"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                    <LinearLayout
+                        android:id="@+id/btn_linear_layout"
+                        android:layout_below="@+id/discussiondion_topic_text"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Mindset"
+                            android:clickable="true"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:background="@drawable/sign_up_custom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Values"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:background="@drawable/sign_up_custom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_below="@+id/btn_linear_layout"
+                        android:text="Application Process"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="88dp"
+                        android:layout_marginLeft="88dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:textColor="@color/colorBlack"
+                        android:alpha=".8"
+                        android:background="@drawable/sign_up_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/work_experience_topic"
+            android:layout_below="@+id/discussion_topic"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <TextView
+                android:id="@+id/work_experience_topic_text"
+                android:text="Work Experience"
+                android:textSize="14dp"
+                android:textColor="#41ABF8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/edit"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_below="@+id/work_experience_topic_text"
+                android:id="@+id/work_exp_name"
+                android:text="Bayer &amp;MzKensy "
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/certification_text"
+                android:layout_below="@+id/work_exp_name"
+               android:hint="Leagle councel geneva 1 year"
+                android:textSize="14sp"
+                android:textColor="#ff3d26"
+                android:padding="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/close_line_industry"
+                android:layout_below="@+id/certification_text"
+                android:text="CloseLine Industry"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/certification_text_closline"
+                android:layout_below="@+id/close_line_industry"
+               android:text="Leagle councel london 1 year"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/education_topic"
+            android:layout_below="@+id/work_experience_topic"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <TextView
+                android:id="@+id/education_topic_text"
+                android:text="Education"
+                android:textSize="14dp"
+                android:textColor="#41ABF8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/edit"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_below="@+id/education_topic_text"
+                android:id="@+id/education_name"
+                android:text="Nice Sofia antipolish "
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/certification_text_education"
+                android:layout_below="@+id/education_name"
+                android:text="Master ||, law, 2012-2014 "
+                android:textSize="14sp"
+                android:textColor="#ff3d26"
+                android:alpha=".8"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/values_topic"
+                android:layout_below="@+id/education_topic"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/education"
+                        android:text="Education"
+                        android:textSize="14dp"
+                        android:textColor="#41ABF8"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/edit"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                    <LinearLayout
+                        android:id="@+id/btn_linear_layout_education"
+                        android:layout_below="@+id/education"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Balance"
+                            android:clickable="true"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:background="@drawable/sign_up_custom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Adaptability"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:alpha=".8"
+                            android:background="@drawable/sign_up_custom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_below="@+id/btn_linear_layout_education"
+                        android:text="Being the best"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="88dp"
+                        android:layout_marginLeft="88dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:textColor="@color/colorBlack"
+                        android:alpha=".8"
+                        android:background="@drawable/sign_up_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/image_layout_linear_incomplete_profile"
+                android:layout_below="@+id/values_topic"
+                android:weightSum="2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/linkedin"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_share_opportunity_incomp_profile"
+                android:layout_below="@+id/image_layout_linear_incomplete_profile"
+                android:text="Share opportuntiy"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textColor="#41ABF8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/sign_up_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/btn_share_opportunity_incomp_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/profile_bottom_layout"
+                    android:id="@+id/include_profile_bottom_incom_profile"
+                    ></include></RelativeLayout>
+
+        </RelativeLayout>
+
+          </ScrollView>
+
+
+    </RelativeLayout>
+

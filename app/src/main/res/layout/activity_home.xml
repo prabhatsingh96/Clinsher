@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivity.controller.home.HomeActivity">
+
+    <!--<RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"></RelativeLayout>
+-->
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/view_pager"
+       android:background="#41ABF8"
+        android:layout_width="match_parent"
+       android:layout_height="450dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_relative_layout"
+        android:layout_below="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:onClick="signUpBtn"
+            android:id="@+id/sign_up_btn"
+            android:text="Sign Up"
+            android:layout_marginTop="35dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_btn_custom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:onClick="logInBtn"
+            android:id="@+id/log_in_btn"
+            android:text="Log In"
+            android:textColor="#41ABF8"
+            android:layout_below="@+id/sign_up_btn"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sign_up_custom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

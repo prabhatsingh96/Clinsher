@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3c2f3c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/share_Opp_edit_relative_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_dialog_legle_assistant"
+            android:text="Legle Assistant"
+            android:textSize="21dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_dialog_delete_post"
+            android:layout_below="@+id/tv_dialog_legle_assistant"
+            android:text="Delete Post"
+            android:textSize="21dp"
+            android:textColor="#f65510"
+            android:alpha=".7"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_dialog_edit"
+            android:layout_below="@+id/tv_dialog_delete_post"
+            android:text="Edit"
+            android:textSize="21dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancel_layout_dialog"
+        android:layout_below="@+id/share_Opp_edit_relative_layout"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:text="Cancel"
+            android:textSize="21dp"
+            android:background="@drawable/custom_dialog_reset"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

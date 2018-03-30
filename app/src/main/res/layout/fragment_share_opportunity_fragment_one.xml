@@ -1,0 +1,362 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.ShareOpportunityFragmentOne">
+
+    <EditText
+        android:id="@+id/share_opp_job_title"
+        android:hint="Job Title"
+        android:padding="18dp"
+        android:singleLine="true"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/share_opp_sector"
+        android:layout_below="@+id/share_opp_job_title"
+        android:hint="Sector"
+        android:padding="18dp"
+        android:singleLine="true"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/share_linear_layout"
+        android:layout_below="@+id/share_opp_sector"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/share_opp_country"
+            android:layout_weight="1"
+            android:hint="Country"
+            android:padding="18dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/share_city"
+            android:layout_weight="1"
+            android:hint="City"
+            android:singleLine="true"
+            android:padding="18dp"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/share_opp_contract_type"
+        android:layout_below="@+id/share_linear_layout"
+        android:text="Contract Type"
+        android:layout_marginTop="12dp"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/colorBlack"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<RelativeLayout
+        android:id="@+id/share_btn_container"
+        android:layout_below="@+id/share_opp_contract_type"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/share_btn_full_time"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:text="Full Time"
+            android:textAllCaps="false"
+            android:alpha=".7"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+    <Button
+        android:id="@+id/share_btn_part_time"
+        android:layout_toRightOf="@+id/share_btn_full_time"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/btn_custom_change_user_name_layout"
+        android:text="Part Time"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+
+    <Button
+        android:id="@+id/share_btn_temporary"
+        android:layout_toRightOf="@+id/share_btn_part_time"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/btn_custom_change_user_name_layout"
+        android:text="Temporary"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+    <Button
+        android:id="@+id/share_btn_permament"
+        android:layout_below="@+id/share_btn_full_time"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_custom_change_user_name_layout"
+        android:text="Permament"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+    <Button
+        android:id="@+id/share_btn_internship"
+        android:layout_toRightOf="@+id/share_btn_permament"
+        android:layout_below="@+id/share_btn_full_time"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/btn_custom_change_user_name_layout"
+        android:text="Internship"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+    <Button
+        android:id="@+id/share_btn_volunteer"
+        android:layout_toRightOf="@+id/share_btn_internship"
+        android:layout_below="@+id/share_btn_full_time"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/btn_custom_change_user_name_layout"
+        android:text="Volunteer"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_opp_post_qualification_exp"
+        android:layout_below="@+id/share_btn_container"
+        android:text="Post Qualification Experiences"
+        android:layout_marginTop="14dp"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/colorBlack"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/share_exp_btn_container"
+        android:layout_below="@+id/share_opp_post_qualification_exp"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:text="0-1"
+            android:textSize="16dp"
+            android:alpha=".7"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+        <Button
+            android:alpha=".7"
+            android:layout_weight="1"
+            android:text="1-3"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:alpha=".7"
+            android:layout_weight="1"
+            android:text="3-5"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+        <Button
+            android:alpha=".7"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="5-7"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+        <Button
+            android:alpha=".7"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="7-10"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+        <Button
+            android:alpha=".7"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="10+"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+        <Button
+            android:alpha=".7"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="yrs"
+            android:textSize="16dp"
+            android:background="@android:color/transparent"
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/share_opp_salary"
+        android:layout_below="@+id/share_exp_btn_container"
+        android:text="Salary(optional)"
+        android:layout_marginTop="14dp"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/colorBlack"
+        android:alpha=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/share_opp_salary_btn_container"
+        android:layout_below="@+id/share_opp_salary"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/$"
+            android:layout_weight="1"
+            android:text="$"
+            android:textSize="16dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/$$"
+            android:layout_weight="1"
+            android:text="$$"
+            android:textSize="16dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/$$$"
+            android:layout_weight="1"
+            android:text="$$$"
+            android:textSize="16dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/$$$$"
+            android:layout_weight="1"
+            android:text="$$$$"
+            android:textSize="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/btn_custom_change_user_name_layout"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/share_opp_salary_text_container"
+        android:layout_below="@+id/share_opp_salary_btn_container"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_low"
+            android:layout_weight="1"
+            android:text="low"
+            android:textSize="12dp"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/tv_correct"
+            android:layout_weight="1"
+            android:text="Correct"
+            android:textSize="12dp"
+            android:layout_marginLeft="14dp"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_high"
+            android:layout_weight="1"
+            android:text="High"
+            android:textSize="12dp"
+            android:layout_marginLeft="14dp"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_Very_high"
+            android:layout_weight="1"
+            android:text="Very High"
+            android:textSize="12dp"
+            android:layout_marginLeft="14dp"
+            android:alpha=".7"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/share_opp_btn_continue_one"
+        android:layout_below="@+id/share_opp_salary_text_container"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:alpha=".7"
+        android:textSize="19dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/sign_up_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

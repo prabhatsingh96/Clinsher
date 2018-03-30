@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cancel_current_position"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:tint="@color/colorWhite"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/education_text"
+            android:text="Education"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_school_text"
+            android:layout_below="@+id/education_text"
+            android:hint="School"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_degree_text"
+            android:layout_below="@+id/et_school_text"
+            android:hint="Degree"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_duty_field"
+            android:layout_below="@+id/et_degree_text"
+            android:hint="Field of duty"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear_contaner_year"
+            android:layout_below="@+id/et_duty_field"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_from_year"
+                android:layout_weight="1"
+                android:hint="From Year"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_to_year"
+                android:layout_weight="1"
+                android:hint="To year"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_below="@id/linear_contaner_year"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sign_up_custom"
+            android:text="Done"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

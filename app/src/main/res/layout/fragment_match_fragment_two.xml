@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.match.MatchFragmentTwo">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_50"
+        android:id="@+id/card_match_fragment_one"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Leagle Assistant"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Law Firm Luxembourg, Permament, Full Time"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Seekers that match your add"
+                android:textColor="@color/colorPrimaryDark"
+                android:alpha=".8"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_sekers_image"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_seekers_text"
+                android:layout_marginTop="35dp"
+                android:weightSum="6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/match_btn_match_profile_frg_two"
+                android:background="@drawable/sign_up_custom"
+                android:text="Match Profile"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="170dp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

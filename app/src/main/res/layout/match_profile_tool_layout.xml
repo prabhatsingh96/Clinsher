@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/iv_match_profile_tool"
+    android:padding="6dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerVertical="true"
+    android:src="@drawable/profile_pitcher"
+    android:layout_width="60dp"
+    android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/match_profile_drawer_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_placeholder"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+
+
+</RelativeLayout>

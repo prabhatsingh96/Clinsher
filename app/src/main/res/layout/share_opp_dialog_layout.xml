@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3c2f3c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/tv_share_opp_dialog_text"
+        android:padding="18dp"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="130dp"
+       android:text="Name of the Company"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/share_opp_arrow_image"
+        android:layout_below="@+id/tv_share_opp_dialog_text"
+        android:src="@drawable/up_arrwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_why_ask_text"
+        android:layout_below="@+id/share_opp_arrow_image"
+        android:layout_marginTop="18dp"
+        android:text="Why do we ask you for this information ?"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/tv_text_share_opp_desc"
+        android:layout_below="@+id/tv_why_ask_text"
+        android:layout_marginTop="65dp"
+        android:text="For leagle matters we ask you to privately disclose us the company
+concerned by the notification but this information will not appear publically."
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:text=" "
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

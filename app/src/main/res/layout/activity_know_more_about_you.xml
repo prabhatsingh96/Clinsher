@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.signup.KnowMoreAboutYouActivity">
+
+    <RelativeLayout
+        android:id="@+id/tool_container_more_about_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/forgot_tool_bar_layout"
+            android:id="@+id/include_tool_more_about_you"
+            ></include>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_below="@+id/tool_container_more_about_you"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/et_position_more_about_you"
+                android:layout_marginTop="5dp"
+                android:hint="Position you are applying for"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_school_more_about_you"
+                android:layout_below="@+id/et_position_more_about_you"
+                android:hint="School or Collage/University"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/linear_date_contaner_more_about_you"
+                android:layout_below="@+id/et_school_more_about_you"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_from_year_more_about_you"
+                    android:layout_weight="1"
+                    android:hint="From Year"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_to_year_more_about_you"
+                    android:layout_weight="1"
+                    android:hint="To Year"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_contaner_more_about_you"
+                android:layout_below="@+id/linear_date_contaner_more_about_you"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_country_more_about_you"
+                    android:layout_weight="1"
+                    android:hint="Country"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_city_more_about_you"
+                    android:layout_weight="1"
+                    android:hint="City"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_take_me_more_about_you"
+                android:layout_below="@+id/linear_contaner_more_about_you"
+                android:text="Take Me In"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_22"
+                android:textColor="#41ABF8"
+                android:background="@drawable/sign_up_custom"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

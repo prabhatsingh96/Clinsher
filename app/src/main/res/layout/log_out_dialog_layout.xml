@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_dialog_reset"
+    android:orientation="vertical"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="35dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_logout_text_dialog"
+        android:text="Log out"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:alpha=".8"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_confirmation_for_logout"
+        android:text="Are you sure you want to logout ?"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:alpha=".8"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/logout_no_btn"
+            android:background="@drawable/sign_up_custom"
+            android:text="No"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/logout_yes_btn"
+            android:background="@drawable/sign_up_custom"
+            android:text="Yes"
+            android:textAllCaps="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

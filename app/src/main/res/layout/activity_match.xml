@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.match.MatchActivity">
+
+    <RelativeLayout
+        android:id="@+id/match_tool_relative_latout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/match_tool_layout"
+            android:id="@+id/include_match_tool"></include>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/match_fragment_container"
+        android:layout_below="@+id/match_tool_relative_latout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/profile_bottom_layout"
+            android:id="@+id/match_bottom_layout"></include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

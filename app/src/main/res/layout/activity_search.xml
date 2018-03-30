@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.search.SearchActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/search_tool_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/search_tool_layout"
+            android:id="@+id/include_search_tool_layout"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_fragment_container"
+        android:layout_below="@+id/search_tool_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/search_bottom_relative_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/profile_bottom_layout"
+            android:id="@+id/search_bottom_layout"
+            ></include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

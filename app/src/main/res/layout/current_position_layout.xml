@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cancel_current_position"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:tint="@color/colorWhite"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/custom_dialog_reset"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/current_position_text"
+            android:text="Current Position"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_lawyer_text"
+            android:layout_below="@+id/current_position_text"
+            android:hint="Lawyer"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_cinge_management"
+            android:layout_below="@+id/et_lawyer_text"
+            android:hint="Cinge Management"
+            android:padding="18dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear_contaner_add"
+            android:layout_below="@+id/et_cinge_management"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_london_text"
+                android:layout_weight="1"
+                android:hint="London"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_uk_text"
+                android:layout_weight="1"
+                android:hint="United Kingdom"
+                android:padding="18dp"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_below="@id/linear_contaner_add"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sign_up_custom"
+            android:text="Done"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

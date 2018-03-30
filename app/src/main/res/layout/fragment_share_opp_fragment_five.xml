@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.shareopp.ShareOppFragmentFive">
+
+
+    <TextView
+        android:id="@+id/tv_congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulation your opportunity has been posted !"
+        android:textSize="@dimen/sp_22"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_below="@id/tv_congratulation"
+        android:src="@drawable/done_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/profile_bottom_layout"
+            android:id="@+id/include_bottom_layout_fragment_five_share_opp"
+            ></include>
+    </RelativeLayout>
+
+
+</RelativeLayout>
