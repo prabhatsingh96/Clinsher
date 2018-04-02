@@ -46,5 +46,9 @@ public interface ApiInterface {
                                           @Field ("mobileCode") String CountryCode
                                             );
 
+    @FormUrlEncoded
+    @POST("varifyOTP")
+    Call<ServerResponse>  verifyOtp(@Header ("accesstoken") String acessToken,@Field ("otp" ) String otp);
+
 
 }
