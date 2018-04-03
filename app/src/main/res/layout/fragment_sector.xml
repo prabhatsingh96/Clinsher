@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.signup.SectorFragment">
+
+    <ListView
+        android:id="@+id/lv_sector_list"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

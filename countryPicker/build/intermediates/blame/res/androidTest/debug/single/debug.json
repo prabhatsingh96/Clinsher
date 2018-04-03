@@ -72,24 +72,24 @@
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_st.png"
     },
     {
-        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_ua.png.flat",
-        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_ua.png"
-    },
-    {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_kz.png.flat",
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_kz.png"
+    },
+    {
+        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_ua.png.flat",
+        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_ua.png"
     },
     {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_au.png.flat",
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_au.png"
     },
     {
-        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_lv.png.flat",
-        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_lv.png"
-    },
-    {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_ne.png.flat",
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_ne.png"
+    },
+    {
+        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_lv.png.flat",
+        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_lv.png"
     },
     {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_mv.png.flat",
@@ -116,12 +116,12 @@
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_rw.png"
     },
     {
-        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_yt.png.flat",
-        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_yt.png"
-    },
-    {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_ag.png.flat",
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_ag.png"
+    },
+    {
+        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_yt.png.flat",
+        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_yt.png"
     },
     {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_pn.png.flat",
@@ -160,12 +160,12 @@
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_lu.png"
     },
     {
-        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_bs.png.flat",
-        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_bs.png"
-    },
-    {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_km.png.flat",
         "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_km.png"
+    },
+    {
+        "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_bs.png.flat",
+        "source": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/bundles/debug/res/drawable-hdpi-v4/flag_bs.png"
     },
     {
         "merged": "/home/fluper/AndroidStudioProjects/Clinsher/countryPicker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_flag_ki.png.flat",

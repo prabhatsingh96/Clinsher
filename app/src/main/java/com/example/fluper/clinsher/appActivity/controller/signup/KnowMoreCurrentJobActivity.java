@@ -1,5 +1,6 @@
 package com.example.fluper.clinsher.appActivity.controller.signup;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SwitchCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +19,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.example.fluper.clinsher.R;
 import com.example.fluper.clinsher.appActivity.controller.model.User;
@@ -40,7 +44,7 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
 
     private RelativeLayout rl;
     private TextView toolText;
-    private ImageView workForceToggle;
+    private Switch workForceToggle;
     private Intent workForceToggleIntent;
     private TextView country;
     private android.app.AlertDialog.Builder builder;
@@ -50,6 +54,7 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
     private Spinner citySpinner;
     private String countryCode;
     private ArrayList<String>  cityList;
+    private EditText etSector;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +91,13 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(workForceToggleIntent);
+            }
+        });
+
+        etSector.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                addSectorFragment ();
             }
         });
 
@@ -141,6 +153,7 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
     }
 
     // find id
+    @SuppressLint("WrongViewCast")
     public void gettingId(){
         rl = findViewById(R.id.include_tool_more_current_job);
         toolText = rl.findViewById(R.id.tv_tool_text);
@@ -149,7 +162,8 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
         citySpinner = findViewById (R.id.et_city_more_current_job);
 
         toolText.setText("We need to know more about your current job !");
-        toolText.setTextSize(18);
+        toolText.setTextSize(16);
+        etSector = findViewById (R.id.et_sector_more_current_job);
 
     }
 
@@ -271,6 +285,14 @@ public class KnowMoreCurrentJobActivity extends AppCompatActivity {
         return cityList;
     }
 
+
+    //Add Fragment
+    public void addSectorFragment(){
+        android.support.v4.app.FragmentManager frg = getSupportFragmentManager();
+        FragmentTransaction ft = frg.beginTransaction();
+        ft.add(R.id.fragment_container_know_more_about_job, new SectorFragment ());
+        ft.commit();
+    }
 
 
 }

@@ -30,7 +30,36 @@ each 2 mounth.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string-array name="CountryCodes" >
+    <string-array name="sector_list">
+        <item>Accountancy</item>
+        <item>Administrative servise</item>
+        <item>Adevertising, Media &amp; Entertainment</item>
+        <item>Banking</item>
+        <item>Compilence</item>
+        <item>Construction</item>
+        <item>Counslting</item>
+        <item>Coustomer Servise</item>
+        <item>Education</item>
+        <item>Energy, Oil &amp; Gas</item>
+        <item>Engeneering</item>
+        <item>Finanicial Servise</item>
+        <item>Food Processing</item>
+        <item>Healthcare</item>
+        <item>Hospitality &amp; Tourism</item>
+        <item>Human ressourse</item>
+        <item>Insurence</item>
+        <item>Investment Servise</item>
+        <item>IT &amp; Technology</item>
+        <item>Marketing</item>
+        <item>Pharmacetucial</item>
+        <item>Product data &amp; Design</item>
+        <item>real Estate</item>
+        <item>Risk-Credit operational </item>
+        <item>Sales &amp; Business Development</item>
+        <item>Telecomminication Services</item>
+    </string-array>
+
+    <string-array name="CountryCodes">
         <item>93,AF</item>
         <item>355,AL</item>
         <item>213,DZ</item>

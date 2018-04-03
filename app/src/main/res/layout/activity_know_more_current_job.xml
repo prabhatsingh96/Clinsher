@@ -32,19 +32,24 @@
                 android:text="I'm new to the workforce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageView
-                android:id="@+id/workforce_toogle"
-                android:layout_alignParentRight="true"
-                android:clickable="true"
-                android:src="@drawable/de_toggle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/workforce_toogle"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Yes"
+            android:textOff="No"
+            android:backgroundTint="@color/colorPrimary"
+             />
+
         <EditText
             android:id="@+id/et_job_title_more_cuurent_job"
             android:layout_below="@+id/workforce_toogle"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             android:hint="Job Title"
-            android:padding="15dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -53,7 +58,8 @@
             android:id="@+id/et_compnay_more_cuurent_job"
             android:layout_below="@+id/et_job_title_more_cuurent_job"
             android:hint="Company"
-            android:padding="15dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -70,7 +76,8 @@
                 android:id="@+id/et_country_more_current_job"
                 android:layout_weight="1"
                 android:hint="Country"
-                android:padding="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
                 android:singleLine="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -79,7 +86,8 @@
                 android:id="@+id/et_city_more_current_job"
                 android:layout_weight="1"
                 android:hint="United Kingdom"
-                android:padding="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
                 android:singleLine="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -89,8 +97,10 @@
         <EditText
             android:id="@+id/et_sector_more_current_job"
             android:layout_below="@+id/linear_contaner_more_current_job"
-            android:hint="Country"
-            android:padding="15dp"
+            android:hint="Sector"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:editable="false"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -99,7 +109,8 @@
             android:id="@+id/et_contract_type_more_cuurent_job"
             android:layout_below="@+id/et_sector_more_current_job"
             android:hint="Contract Type"
-            android:padding="15dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -116,14 +127,18 @@
             android:text="I'm new to the workforce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <ImageView
+
+        <Switch
             android:layout_below="@+id/et_contract_type_more_cuurent_job"
             android:id="@+id/still_employed_toogle"
             android:layout_alignParentRight="true"
-            android:src="@drawable/de_toggle"
-            android:layout_marginTop="18dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textOn="Yes"
+            android:textOff="No"
+            android:backgroundTint="@color/colorPrimary"
+        />
 
 
         <LinearLayout
@@ -138,7 +153,8 @@
                 android:id="@+id/et_starting_date_more_current_job"
                 android:layout_weight="1"
                 android:hint="Country"
-                android:padding="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
                 android:singleLine="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -147,7 +163,8 @@
                 android:id="@+id/et_ending_date_more_current_job"
                 android:layout_weight="1"
                 android:hint="United Kingdom"
-                android:padding="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
                 android:singleLine="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -167,6 +184,14 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content" />
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container_know_more_about_job"
+        android:layout_below="@+id/tool_container_more_current_job"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </RelativeLayout>
 
