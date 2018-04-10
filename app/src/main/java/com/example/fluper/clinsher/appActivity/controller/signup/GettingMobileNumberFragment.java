@@ -20,6 +20,8 @@ import com.example.fluper.clinsher.appActivity.controller.model.User;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.APiClient;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ApiInterface;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ServerResponse;
+import com.example.fluper.clinsher.appActivity.controller.utils.AppUtil;
+
 import java.io.IOException;
 import java.util.Locale;
 import retrofit2.Call;
@@ -63,6 +65,7 @@ public class GettingMobileNumberFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate (R.layout.fragment_getting_mobile_number, container,
                 false);
+        AppUtil.dismiss (getContext ());
         gettingId ();
         settingDataOnLayout ();
 
@@ -99,10 +102,10 @@ public class GettingMobileNumberFragment extends Fragment {
         btnContinue.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-
-
+                AppUtil.showProgressDialog (getActivity ());
                 updateUserMobile (accessToken, mobileNumber.getText ().toString ().trim (),
                         countryPhoneCode);
+
 
             }
         });
@@ -176,6 +179,8 @@ public class GettingMobileNumberFragment extends Fragment {
                     try {
                         String errorMessage = response.errorBody().string();
                         Log.d("test", "Error : " + errorMessage);
+                        AppUtil.dismiss (getActivity ());
+
                     } catch (IOException e) {
                         //e.printStackTrace();
                     }
@@ -185,6 +190,8 @@ public class GettingMobileNumberFragment extends Fragment {
             @Override
             public void onFailure(Call<ServerResponse> call, Throwable t) {
                 Log.d("test","error "+t.getMessage());
+                AppUtil.dismiss (getActivity ());
+
                 t.printStackTrace();
             }
         });

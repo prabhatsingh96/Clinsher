@@ -84,9 +84,12 @@ public class CountryList {
                 this.name = name;
             }
 
-            public String toString() {
+           /* public String toString() {
                 return iso + " - " + code + " - " + name.toUpperCase();
-            }
+            }*/
+           public String toString() {
+               return  name.toUpperCase();
+           }
         }
 
         /**

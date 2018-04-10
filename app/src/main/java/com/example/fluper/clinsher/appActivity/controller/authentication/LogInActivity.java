@@ -19,6 +19,8 @@ import com.example.fluper.clinsher.appActivity.controller.profilemodule.ProfileA
 import com.example.fluper.clinsher.appActivity.controller.retrofit.APiClient;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ApiInterface;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ServerResponse;
+import com.example.fluper.clinsher.appActivity.controller.signup.KnowMoreCurrentJobActivity;
+import com.example.fluper.clinsher.appActivity.controller.utils.AppUtil;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -51,6 +53,7 @@ public class LogInActivity extends AppCompatActivity {
     private String password;
     private Intent forgotIntent;
     private Intent logInIntent;
+    private Intent logInIntentTwo;
     private User user;
     private String email1;
     private String password1;
@@ -70,6 +73,11 @@ public class LogInActivity extends AppCompatActivity {
     private static final String url = "https://api.linkedin.com/v1/people/~:(id,first-name," +
             "last-name,public-profile-url,picture-url,email-address,picture-urls::(original))";
 
+    @Override
+    protected void onPause() {
+        super.onPause ();
+        AppUtil.dismiss (LogInActivity.this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +109,7 @@ public class LogInActivity extends AppCompatActivity {
     public void allIntent() {
         forgotIntent = new Intent (this, ForgotPasswordActivity.class);
         logInIntent = new Intent (this, ProfileActivity.class);
+        logInIntentTwo = new Intent(this,KnowMoreCurrentJobActivity.class);
     }
 
     //getting details from layout
@@ -126,8 +135,11 @@ public class LogInActivity extends AppCompatActivity {
                     Toast.makeText (LogInActivity.this, "Invalid Password",
                             Toast.LENGTH_SHORT).show ();
 
-                } else
+                } else {
+                    AppUtil.showProgressDialog (LogInActivity.this);
                     logInUsertoServer (email, password);
+
+                }
             }
         });
 
@@ -180,9 +192,14 @@ public class LogInActivity extends AppCompatActivity {
                     String message = serverResponse.message;
 
                     if (email1.equals (email) && password1.equals (password)) {
-                        startActivity (logInIntent);
-                        Toast.makeText (LogInActivity.this, " " + message,
-                                Toast.LENGTH_SHORT).show ();
+                          if(user.getSignupStatus ().equals ("2")) {
+                              startActivity (logInIntent);
+                              Toast.makeText (LogInActivity.this, " " + message,
+                                      Toast.LENGTH_SHORT).show ();
+                          }else{
+                              startActivity (logInIntentTwo);
+                              AppUtil.dismiss (LogInActivity.this);
+                          }
                     } else {
                         Toast.makeText (LogInActivity.this, "Invalid Cardinals", Toast.LENGTH_SHORT).show ();
                     }
@@ -191,6 +208,7 @@ public class LogInActivity extends AppCompatActivity {
                     try {
                         String errorMessage = response.errorBody ().string ();
                         Log.d ("test", "Error : " + errorMessage);
+                        AppUtil.dismiss (LogInActivity.this);
                     } catch (IOException e) {
                         //e.printStackTrace();
                     }
@@ -200,6 +218,7 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<ServerResponse> call, Throwable t) {
                 Log.d ("test", "error " + t.getMessage ());
+                AppUtil.dismiss (LogInActivity.this);
                 t.printStackTrace ();
             }
         });

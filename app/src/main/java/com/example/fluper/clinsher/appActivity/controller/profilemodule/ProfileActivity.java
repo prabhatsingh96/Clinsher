@@ -23,11 +23,12 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView settingImage;
     private RelativeLayout rl;
     private TextView userName;
-    private TextView addSummary;
-    private TextView selceDiscussionTopic;
-    private TextView textViewWorkExperience;
-    private TextView tvEducationText;
-    private TextView tvValues;
+    private ImageView profileNameEdit;
+    private ImageView addSummary;
+    private ImageView selceDiscussionTopic;
+    private ImageView textViewWorkExperience;
+    private ImageView tvEducationText;
+    private ImageView tvValues;
     private Intent settingImageIntent;
     private AlertDialog.Builder builder;
     private AlertDialog alertDialog;
@@ -129,7 +130,8 @@ public class ProfileActivity extends AppCompatActivity {
     public void gettingId(){
         rl = findViewById(R.id.include_profile_tool);
         settingImage = rl.findViewById(R.id.setting_icon);
-        userName = rl.findViewById(R.id.profile_name);
+        //userName = rl.findViewById(R.id.profile_name);
+        profileNameEdit = rl.findViewById (R.id.profile_name);
         addSummary = rl.findViewById(R.id.add_summury_btn);
         selceDiscussionTopic = findViewById(R.id.discussion_text);
         textViewWorkExperience = findViewById(R.id.work_exp_text);

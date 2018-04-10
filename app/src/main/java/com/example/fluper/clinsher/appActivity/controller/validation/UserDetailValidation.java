@@ -12,14 +12,14 @@ import com.example.fluper.clinsher.appActivity.controller.signup.SignUpActivity;
 
 public class UserDetailValidation {
 
-    Context context;
+    private Context context;
 
     public UserDetailValidation(Context context) {
         this.context = context;
     }
     //Email Validation
 
-    public boolean isValidEmail(String email){
+    public  boolean isValidEmail(String email){
 
         if (email.equals(""))
         {
@@ -36,7 +36,7 @@ public class UserDetailValidation {
     //password validation
     public boolean passwordValidation(String password) {
         if (password.equals("")) {
-            Toast.makeText(context, "Please enter password",
+            Toast.makeText(context, "Please enter "+password,
                     Toast.LENGTH_SHORT).show();
             return false;
         }else

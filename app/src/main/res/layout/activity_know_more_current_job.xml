@@ -10,19 +10,20 @@
         android:id="@+id/tool_container_more_current_job"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/forgot_tool_bar_layout"
+        <include layout="@layout/otp_layout"
             android:id="@+id/include_tool_more_current_job"
             ></include>
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/job_detail_rel_layout"
         android:layout_below="@+id/tool_container_more_current_job"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/workforce_text"
@@ -49,6 +50,9 @@
             android:layout_marginTop="7dp"
             android:hint="Job Title"
             android:paddingBottom="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
             android:paddingTop="5dp"
             android:singleLine="true"
             android:layout_width="match_parent"
@@ -58,6 +62,9 @@
             android:id="@+id/et_compnay_more_cuurent_job"
             android:layout_below="@+id/et_job_title_more_cuurent_job"
             android:hint="Company"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
             android:paddingBottom="20dp"
             android:paddingTop="5dp"
             android:singleLine="true"
@@ -79,14 +86,22 @@
                 android:paddingBottom="20dp"
                 android:paddingTop="5dp"
                 android:singleLine="true"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
             <Spinner
                 android:id="@+id/et_city_more_current_job"
                 android:layout_weight="1"
-                android:hint="United Kingdom"
+                android:background="@null"
+                android:hint="City"
                 android:paddingBottom="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".7"
                 android:paddingTop="5dp"
                 android:singleLine="true"
                 android:layout_width="0dp"
@@ -94,37 +109,83 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/et_sector_more_current_job"
+        <LinearLayout
+            android:id="@+id/view_linear_layoutt"
+            android:orientation="horizontal"
+            android:weightSum="2"
             android:layout_below="@+id/linear_contaner_more_current_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:alpha=".7"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBlack"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:alpha=".7"
+                android:background="@color/colorBlack"></View>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/et_sector_more_current_job"
+            android:layout_below="@+id/view_linear_layoutt"
             android:hint="Sector"
-            android:paddingBottom="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorBlack"
+            android:alpha=".7"
+            android:textSize="15sp"
             android:paddingTop="5dp"
             android:editable="false"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/et_contract_type_more_cuurent_job"
+        <View
+            android:background="@color/colorBlack"
+            android:id="@+id/sector_view"
             android:layout_below="@+id/et_sector_more_current_job"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+
+        <TextView
+            android:id="@+id/et_contract_type_more_cuurent_job"
+            android:layout_below="@+id/sector_view"
             android:hint="Contract Type"
-            android:paddingBottom="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:alpha=".7"
             android:paddingTop="5dp"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
+        <View
+            android:background="@color/colorBlack"
+            android:id="@+id/contract_type_view"
+            android:layout_below="@+id/et_contract_type_more_cuurent_job"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
 
 
         <TextView
-            android:layout_below="@id/et_contract_type_more_cuurent_job"
+            android:layout_below="@+id/contract_type_view"
             android:id="@+id/still_employed_text"
             android:textSize="18dp"
             android:textColor="@color/colorBlack"
             android:layout_marginTop="18dp"
             android:alpha=".7"
-            android:text="I'm new to the workforce"
+            android:text="Still Employed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -145,32 +206,68 @@
             android:id="@+id/linear_date_contaner_more_current_job"
             android:layout_below="@+id/still_employed_toogle"
             android:weightSum="2"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
+
+            <TextView
                 android:id="@+id/et_starting_date_more_current_job"
                 android:layout_weight="1"
-                android:hint="Country"
+                android:hint="Starting Date"
+                android:layout_gravity="left"
                 android:paddingBottom="20dp"
                 android:paddingTop="5dp"
                 android:singleLine="true"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
-            <EditText
-                android:id="@+id/et_ending_date_more_current_job"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
                 android:layout_weight="1"
-                android:hint="United Kingdom"
-                android:paddingBottom="20dp"
-                android:paddingTop="5dp"
-                android:singleLine="true"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" />
+                android:alpha=".7"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBlack"></View>
+
+
 
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/end_date_view_linear_layout"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/et_ending_date_more_current_job"
+                android:layout_weight="1"
+                android:hint="Ending Date"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:id="@+id/ending_date_vieww"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:alpha=".7"
+                android:background="@color/colorBlack"></View>
+        </LinearLayout>
+        </LinearLayout>
          <Button
              android:id="@+id/btn_take_me_more_current_job"
              android:layout_below="@+id/linear_date_contaner_more_current_job"
@@ -179,7 +276,7 @@
              android:textSize="@dimen/sp_22"
              android:textColor="#41ABF8"
              android:background="@drawable/sign_up_custom"
-             android:layout_marginTop="42dp"
+             android:layout_marginTop="52dp"
              android:layout_marginBottom="20dp"
              android:layout_width="match_parent"
              android:layout_height="wrap_content" />

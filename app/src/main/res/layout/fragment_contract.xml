@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluper.clinsher.appActivity.controller.signup.ContractFragment">
+<!--
+    <include layout="@layout/contract_type_layout"
+        android:id="@+id/include_contract_type"></include>-->
+
+    <ListView
+        android:id="@+id/contract_fragment_list"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View>
+</RelativeLayout>

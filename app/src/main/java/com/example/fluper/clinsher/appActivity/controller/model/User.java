@@ -13,19 +13,31 @@ public class User {
     private String password;
     private String accessToken;
     private String otp;
+    private String signupStatus;
 
     public User() {
 
     }
 
     public User(String firstName, String lastName, String email, String password,
-                String accessToken, String otp) {
+                String accessToken, String otp,String signupStatus) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.accessToken = accessToken;
         this.otp = otp;
+        this.signupStatus = signupStatus;
+
+
+    }
+
+    public String getSignupStatus() {
+        return signupStatus;
+    }
+
+    public void setSignupStatus(String signupStatus) {
+        this.signupStatus = signupStatus;
     }
 
     public String getFirstName() {

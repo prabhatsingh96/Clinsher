@@ -49,6 +49,9 @@ public class APiClient {
 
         httpClient.readTimeout(60, TimeUnit.SECONDS);
         httpClient.connectTimeout(60, TimeUnit.SECONDS);
+        httpClient.writeTimeout (60, TimeUnit.SECONDS);
+
+
         // add logging as last interceptor only in Development Mode.
         if (BuildConfig.DEBUG) {
             httpClient.addInterceptor(logging);

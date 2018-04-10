@@ -42,7 +42,6 @@
               android:layout_height="wrap_content">
 
               <TextView
-                  android:id="@+id/profile_name"
                   android:layout_marginLeft="20dp"
                   android:gravity="center"
                   android:text="@string/profile_info"
@@ -52,6 +51,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content" />
               <ImageView
+                  android:id="@+id/profile_name"
                   android:src="@drawable/edit"
                   android:layout_gravity="end"
                   android:layout_marginTop="100dp"
@@ -68,7 +68,7 @@
 
              </View>
               <Button
-                  android:id="@+id/add_summury_btn"
+
                   android:layout_marginTop="160dp"
                   android:text="Add your short summary"
                   android:clickable="true"
@@ -80,6 +80,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content" />
               <ImageView
+                  android:id="@+id/add_summury_btn"
                   android:src="@drawable/edit"
                   android:layout_gravity="end"
                   android:layout_marginTop="160dp"

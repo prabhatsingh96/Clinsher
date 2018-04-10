@@ -3,9 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
     tools:context="com.example.fluper.clinsher.appActivity.controller.signup.GettingMobileNumberFragment">
+    <RelativeLayout
+        android:id="@+id/tool_layout_mobile_fragment"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="Verification Step"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@+id/tool_layout_mobile_fragment"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 
     <TextView
@@ -109,4 +129,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></View>
 
+</RelativeLayout>
 </RelativeLayout>

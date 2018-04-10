@@ -10,7 +10,7 @@
         android:id="@+id/tool_container_more_about_you"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/forgot_tool_bar_layout"
+        <include layout="@layout/otp_layout"
             android:id="@+id/include_tool_more_about_you"
             ></include>
     </RelativeLayout>
@@ -28,7 +28,11 @@
                 android:id="@+id/et_position_more_about_you"
                 android:layout_marginTop="5dp"
                 android:hint="Position you are applying for"
-                android:padding="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:textSize="16dp"
                 android:singleLine="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -37,63 +41,149 @@
                 android:id="@+id/et_school_more_about_you"
                 android:layout_below="@+id/et_position_more_about_you"
                 android:hint="School or Collage/University"
-                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:textSize="16dp"
                 android:singleLine="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:id="@+id/et_higher_degree"
+                android:layout_below="@+id/et_school_more_about_you"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="Higher Degree"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/higher_degree_view"
+                android:background="@color/colorBlack"
+                android:layout_below="@+id/et_higher_degree"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/et_study_field"
+                android:layout_below="@+id/higher_degree_view"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="Study Field"
+                android:textColor="@color/colorBlack"
+                android:alpha=".8"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/studyField_view"
+                android:background="@color/colorBlack"
+                android:layout_below="@+id/et_study_field"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
             <LinearLayout
                 android:id="@+id/linear_date_contaner_more_about_you"
-                android:layout_below="@+id/et_school_more_about_you"
+                android:layout_below="@+id/studyField_view"
                 android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <TextView
                     android:id="@+id/et_from_year_more_about_you"
                     android:layout_weight="1"
                     android:hint="From Year"
-                    android:padding="15dp"
+
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".8"
+                    android:textSize="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
 
-                <EditText
+                <TextView
                     android:id="@+id/et_to_year_more_about_you"
                     android:layout_weight="1"
                     android:hint="To Year"
-                    android:padding="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".8"
+                    android:textSize="16dp"
                     android:singleLine="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
 
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:id="@+id/year_view"
+                 android:weightSum="2"
+                 android:layout_below="@+id/linear_date_contaner_more_about_you"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1sp"
+                     android:layout_weight="1"
+                     android:alpha=".7"
+                     android:layout_marginLeft="1dp"
+                     android:layout_marginRight="10dp"
+                     android:background="@color/colorBlack"></View>
 
+                 <View
+                     android:id="@+id/ending_date_vieww"
+                     android:layout_width="match_parent"
+                     android:layout_height="1sp"
+                     android:layout_weight="1"
+                     android:layout_marginLeft="1dp"
+                     android:alpha=".7"
+                     android:background="@color/colorBlack"></View>
+
+             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linear_contaner_more_about_you"
-                android:layout_below="@+id/linear_date_contaner_more_about_you"
+                android:layout_below="@+id/year_view"
                 android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <TextView
                     android:id="@+id/et_country_more_about_you"
                     android:layout_weight="1"
                     android:hint="Country"
-                    android:padding="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".8"
+                    android:textSize="16dp"
                     android:singleLine="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
 
-                <EditText
+                <TextView
                     android:id="@+id/et_city_more_about_you"
                     android:layout_weight="1"
                     android:hint="City"
-                    android:padding="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    android:textColor="@color/colorBlack"
+                    android:alpha=".8"
+                    android:textSize="16dp"
                     android:singleLine="true"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
@@ -101,9 +191,36 @@
             </LinearLayout>
 
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/place_view"
+                android:weightSum="2"
+                android:layout_below="@+id/linear_contaner_more_about_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_weight="1"
+                    android:alpha=".7"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorBlack"></View>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:alpha=".7"
+                    android:background="@color/colorBlack"></View>
+
+            </LinearLayout>
+
             <Button
                 android:id="@+id/btn_take_me_more_about_you"
-                android:layout_below="@+id/linear_contaner_more_about_you"
+                android:layout_below="@+id/place_view"
                 android:text="Take Me In"
                 android:textAllCaps="false"
                 android:textSize="@dimen/sp_22"

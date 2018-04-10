@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<ListView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/contract_list_view_text"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Contract type"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:alpha=".7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="@dimen/dp_30"
+                android:visibility="gone"
+                android:id="@+id/fullTimeTxtId"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="@dimen/dp_15"
+                android:layout_margin="5dp"
+                android:text="Full Time"
+                android:textColor="#808080"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+            <TextView
+                android:visibility="gone"
+
+                android:id="@+id/partTimeTxtId"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="@dimen/dp_15"
+                android:layout_margin="5dp"
+                android:text="Part Time"
+                android:textColor="#808080"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="19dp"
+                android:id="@+id/temTxtId"
+                android:layout_margin="5dp"
+                android:text="Temporary"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="19dp"
+                android:id="@+id/permanentTxtId"
+                android:layout_margin="5dp"
+                android:text="Permanent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="19dp"
+                android:id="@+id/intershipTxtId"
+                android:layout_margin="5dp"
+                android:text="Internship"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="19dp"
+                android:id="@+id/volunteerTxtId"
+                android:layout_margin="5dp"
+                android:text="Volunteer"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="19dp"
+                android:id="@+id/contracttypeTxtId"
+                android:layout_margin="5dp"
+                android:text="Contract"
+                android:layout_height="wrap_content" />
+
+
+
+            <View
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"></View>
+
+        </LinearLayout>
+
+    </RelativeLayout>

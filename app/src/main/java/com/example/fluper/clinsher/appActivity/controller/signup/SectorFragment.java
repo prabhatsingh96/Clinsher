@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -21,7 +22,7 @@ public class SectorFragment extends Fragment {
 
     private View view;
     private ListView sectorList;
-    private SignUpActivity mSignUpActivity;
+    private KnowMoreCurrentJobActivity mKnowMoreCurrentJobActivity;
 
     public SectorFragment() {
         // Required empty public constructor
@@ -32,7 +33,8 @@ public class SectorFragment extends Fragment {
     public void onAttach(Context context) {
 
         super.onAttach (context);
-       // mSignUpActivity = (SignUpActivity) context;
+
+       mKnowMoreCurrentJobActivity = (KnowMoreCurrentJobActivity) context;
     }
 
     @Override
@@ -41,14 +43,27 @@ public class SectorFragment extends Fragment {
         // Inflate the layout for this fragment
         view =  inflater.inflate (R.layout.fragment_sector, container, false);
         sectorList = view.findViewById (R.id.lv_sector_list);
-        String[] sectors  = getContext ().getResources().getStringArray(R.array.sector_list);
+        final String[] sectors  = getContext ().getResources().getStringArray(R.array.sector_list);
 
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<> (getContext (),
                 android.R.layout.simple_list_item_1,sectors);
         sectorList.setAdapter (arrayAdapter);
+        sectorList.setOnItemClickListener (new AdapterView.OnItemClickListener () {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String sector = sectors[position];
+                mKnowMoreCurrentJobActivity.sendDataFromFragment(sector);
+                getView().setVisibility(View.GONE);
+
+            }
+        });
 
         return  view;
     }
 
+
+     public interface setOnDataListener{
+        void sendDataFromFragment(String sector);
+    }
 }

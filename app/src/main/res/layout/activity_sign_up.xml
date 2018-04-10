@@ -32,7 +32,7 @@
 
 
    <de.hdodenhof.circleimageview.CircleImageView
-       android:src="@drawable/profile_placholder"
+       android:src="@drawable/de_profile"
        android:id="@+id/profile_place_holder"
        android:layout_below="@+id/action_bar_container"
        android:layout_centerHorizontal="true"
@@ -59,6 +59,7 @@
           android:layout_weight="1"
           android:padding="15dp"
          android:singleLine="true"
+          android:inputType="text"
           android:layout_toLeftOf="@+id/et_last_name"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
@@ -67,8 +68,9 @@
       <EditText
           android:id="@+id/et_lastt_name"
           android:layout_alignParentRight="true"
-          android:maxLines="1"
-          android:layout_marginLeft="35dp"
+          android:singleLine="true"
+          android:inputType="text"
+          android:layout_marginLeft="20dp"
           android:hint="* Last Name"
           android:padding="15dp"
           android:layout_width="match_parent"
@@ -79,7 +81,8 @@
           android:layout_below="@+id/linear_layout_name"
           android:padding="15dp"
           android:hint="* Email"
-          android:maxLines="1"
+          android:inputType="textEmailAddress"
+          android:singleLine="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content" />
       <EditText
@@ -87,7 +90,7 @@
           android:layout_below="@+id/et_signupp_email"
           android:padding="15dp"
           android:hint="* Password"
-          android:maxLines="1"
+          android:singleLine="true"
           android:inputType="textPassword"
           android:layout_width="match_parent"
           android:layout_height="wrap_content" />
@@ -95,7 +98,8 @@
           android:id="@+id/et_signup_confirmm_password"
           android:layout_below="@+id/et_signupp_password"
           android:padding="15dp"
-          android:maxLines="1"
+          android:singleLine="true"
+          android:inputType="textPassword"
           android:hint="* Confirm password"
           android:layout_width="match_parent"
           android:layout_height="wrap_content" />
@@ -274,7 +278,6 @@
 
     <RelativeLayout
         android:id="@+id/fragment_container_signup"
-        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

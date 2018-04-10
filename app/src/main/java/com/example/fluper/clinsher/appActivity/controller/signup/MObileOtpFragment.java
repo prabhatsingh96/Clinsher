@@ -21,6 +21,7 @@ import com.example.fluper.clinsher.appActivity.controller.model.User;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.APiClient;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ApiInterface;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ServerResponse;
+import com.example.fluper.clinsher.appActivity.controller.utils.AppUtil;
 
 import java.io.IOException;
 
@@ -59,6 +60,7 @@ public class MObileOtpFragment extends Fragment {
         // Inflate the layout for this fragment
         view =  inflater.inflate (R.layout.fragment_mobile_otp, container, false);
 
+        AppUtil.dismiss (getContext ());
         gettingId ();
         setOpt ();
         btnClicksEvents ();
@@ -220,7 +222,9 @@ public class MObileOtpFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                 verifyOtp(accessToken);
+                AppUtil.showProgressDialog (getActivity ());
+                verifyOtp(accessToken);
+
             }
         });
 
@@ -253,7 +257,7 @@ public class MObileOtpFragment extends Fragment {
                       otpp = user.getOtp ();
                       Log.d ("test","otp = "+otpp);
                     //  if(otpp != null && manualOtp.equals (otpp)) {
-                          Toast.makeText (getContext (), "Valid", Toast.LENGTH_SHORT).show ();
+                           Toast.makeText (getActivity (), "Valid", Toast.LENGTH_SHORT).show ();
                           startActivity (new Intent (getContext (),KnowMoreCurrentJobActivity.class));
                       /*}else
                       {
@@ -265,6 +269,8 @@ public class MObileOtpFragment extends Fragment {
                       try {
                           String errorMessage = response.errorBody().string();
                           Log.d("test", "Error : " + errorMessage);
+                          AppUtil.dismiss (getActivity ());
+
                       } catch (IOException e) {
                           //e.printStackTrace();
                       }
@@ -274,6 +280,8 @@ public class MObileOtpFragment extends Fragment {
               @Override
               public void onFailure(Call<ServerResponse> call, Throwable t) {
                   Log.d("test","error "+t.getMessage());
+                  AppUtil.dismiss (getActivity ());
+
                   t.printStackTrace();
               }
           });
