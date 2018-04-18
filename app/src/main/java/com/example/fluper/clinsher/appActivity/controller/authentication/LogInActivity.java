@@ -3,6 +3,7 @@ package com.example.fluper.clinsher.appActivity.controller.authentication;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,7 @@ import com.example.fluper.clinsher.appActivity.controller.retrofit.ApiInterface;
 import com.example.fluper.clinsher.appActivity.controller.retrofit.ServerResponse;
 import com.example.fluper.clinsher.appActivity.controller.signup.KnowMoreCurrentJobActivity;
 import com.example.fluper.clinsher.appActivity.controller.utils.AppUtil;
+import com.example.fluper.clinsher.databinding.ActivityLogInBinding;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -45,10 +47,6 @@ import retrofit2.Response;
 
 public class LogInActivity extends AppCompatActivity {
 
-    private Button forgotPasswordBtn;
-    private Button logInButton;
-    private TextView logInEmail;
-    private TextView logInPassword;
     private String email;
     private String password;
     private Intent forgotIntent;
@@ -57,11 +55,9 @@ public class LogInActivity extends AppCompatActivity {
     private User user;
     private String email1;
     private String password1;
-    private boolean flag = false;
-    private Button linkedinLogInBtn;
     private CallbackManager callbackManager;
     private GoogleSignInClient mGoogleSignInClient;
-    private Button googleSignIn;
+    private ActivityLogInBinding binding;
 
     private static String APP_ID = "308180782571605"; // Replace your App ID here
 
@@ -82,12 +78,12 @@ public class LogInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
-        // FacebookSdk.sdkInitialize(getApplicationContext());
-        setContentView (R.layout.activity_log_in);
-        // computePakageHash();
 
-        //getting id
-        gettingId ();
+        binding = DataBindingUtil.setContentView (this, R.layout.activity_log_in);
+        // FacebookSdk.sdkInitialize(getApplicationContext());
+       // setContentView (R.layout.activity_log_in);
+
+        //
         //All intent
         allIntent ();
         //All button Clicks
@@ -95,35 +91,25 @@ public class LogInActivity extends AppCompatActivity {
 
     }
 
-    //getting all id
-    public void gettingId() {
-        forgotPasswordBtn = findViewById (R.id.forgot_password_on_login);
-        logInButton = findViewById (R.id.btn_login_login);
-        logInEmail = findViewById (R.id.et_login_email);
-        logInPassword = findViewById (R.id.et_logtin_password);
-        linkedinLogInBtn = findViewById (R.id.log_in_with_linkdin);
-        googleSignIn = findViewById (R.id.log_in_with_google);
-    }
-
     //All intent
     public void allIntent() {
         forgotIntent = new Intent (this, ForgotPasswordActivity.class);
         logInIntent = new Intent (this, ProfileActivity.class);
-        logInIntentTwo = new Intent(this,KnowMoreCurrentJobActivity.class);
+        logInIntentTwo = new Intent (this, KnowMoreCurrentJobActivity.class);
     }
 
     //getting details from layout
     public void gettingDetailsFromLayout() {
 
-        email = logInEmail.getText ().toString ().trim ();
-        password = logInPassword.getText ().toString ().trim ();
+        email = binding.etLoginEmail.getText ().toString ().trim ();
+        password = binding.etLogtinPassword.getText ().toString ().trim ();
     }
 
     //all button clicks Events
     public void buttonClicksEvents() {
 
         // logIn Button Clicks
-        logInButton.setOnClickListener (new View.OnClickListener () {
+        binding.btnLoginLogin.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
                 gettingDetailsFromLayout ();
@@ -144,7 +130,7 @@ public class LogInActivity extends AppCompatActivity {
         });
 
         // forgot button clicks event
-        forgotPasswordBtn.setOnClickListener (new View.OnClickListener () {
+        binding.forgotPasswordOnLogin.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
                 startActivity (forgotIntent);
@@ -152,7 +138,7 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
 
-        linkedinLogInBtn.setOnClickListener (new View.OnClickListener () {
+        binding.logInWithLinkdin.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
 
@@ -161,7 +147,7 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
 
-        googleSignIn.setOnClickListener (new View.OnClickListener () {
+        binding.logInWithGoogle.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
                 //googleSignIn();
@@ -192,14 +178,14 @@ public class LogInActivity extends AppCompatActivity {
                     String message = serverResponse.message;
 
                     if (email1.equals (email) && password1.equals (password)) {
-                          if(user.getSignupStatus ().equals ("2")) {
-                              startActivity (logInIntent);
-                              Toast.makeText (LogInActivity.this, " " + message,
-                                      Toast.LENGTH_SHORT).show ();
-                          }else{
-                              startActivity (logInIntentTwo);
-                              AppUtil.dismiss (LogInActivity.this);
-                          }
+                        if (user.getSignupStatus ().equals ("2")) {
+                            startActivity (logInIntent);
+                            Toast.makeText (LogInActivity.this, " " + message,
+                                    Toast.LENGTH_SHORT).show ();
+                        } else {
+                            startActivity (logInIntentTwo);
+                            AppUtil.dismiss (LogInActivity.this);
+                        }
                     } else {
                         Toast.makeText (LogInActivity.this, "Invalid Cardinals", Toast.LENGTH_SHORT).show ();
                     }
@@ -242,7 +228,6 @@ public class LogInActivity extends AppCompatActivity {
         return !password.equals ("");
     }
 
-
     // log in linked in
     public void logInToLinkedIn() {
 
@@ -276,7 +261,7 @@ public class LogInActivity extends AppCompatActivity {
     // Build the list of member permissions our LinkedIn session requires
     private static Scope buildScope() {
 
-        return Scope.build (Scope.R_BASICPROFILE, Scope.W_SHARE ,Scope.R_EMAILADDRESS );
+        return Scope.build (Scope.R_BASICPROFILE, Scope.W_SHARE, Scope.R_EMAILADDRESS);
     }
 
     @Override
@@ -286,20 +271,18 @@ public class LogInActivity extends AppCompatActivity {
                 requestCode, resultCode, data);
     }
 
-
-
     public void linkededinApiHelper() {
-        APIHelper apiHelper = APIHelper.getInstance(getApplicationContext());
-        apiHelper.getRequest(LogInActivity.this, url, new ApiListener () {
+        APIHelper apiHelper = APIHelper.getInstance (getApplicationContext ());
+        apiHelper.getRequest (LogInActivity.this, url, new ApiListener () {
             @Override
             public void onApiSuccess(ApiResponse result) {
                 try {
 
                     // GRAB PERSON DATA, WITH EMAIL ADDRESS!!
-                    setprofile(result.getResponseDataAsJson());
+                    setprofile (result.getResponseDataAsJson ());
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    e.printStackTrace ();
                 }
 
             }
@@ -311,38 +294,33 @@ public class LogInActivity extends AppCompatActivity {
         });
     }
 
-
     public void setprofile(JSONObject response) {
 
         try {
 
-            String  social_id = response.get("id").toString();
-            String socialFName = response.get("firstName").toString();
-            String socialLName = response.get("lastName").toString();
-            String socialEmail = response.get("emailAddress").toString();
+            String social_id = response.get ("id").toString ();
+            String socialFName = response.get ("firstName").toString ();
+            String socialLName = response.get ("lastName").toString ();
+            String socialEmail = response.get ("emailAddress").toString ();
             // String socialName = response.get("formattedName").toString();
-            Toast.makeText (this, "Profile DAta :"+social_id+""+
-                            socialFName+""+socialEmail+""+socialLName,
+            Toast.makeText (this, "Profile DAta :" + social_id + "" +
+                            socialFName + "" + socialEmail + "" + socialLName,
                     Toast.LENGTH_LONG).show ();
             try {
-                JSONObject photo= response.getJSONObject("pictureUrls");
-                JSONArray values=photo.getJSONArray("values");
-                String socialPhotoUrl = values.getString(0);
+                JSONObject photo = response.getJSONObject ("pictureUrls");
+                JSONArray values = photo.getJSONArray ("values");
+                String socialPhotoUrl = values.getString (0);
 
-
-                Toast.makeText (this, "Profile picture url :"+socialPhotoUrl,
+                Toast.makeText (this, "Profile picture url :" + socialPhotoUrl,
                         Toast.LENGTH_LONG).show ();
-            }
-            catch (Exception e)
-            {
-                Toast.makeText (this, ""+e.toString (), Toast.LENGTH_SHORT).show ();
+            } catch (Exception e) {
+                Toast.makeText (this, "" + e.toString (), Toast.LENGTH_SHORT).show ();
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
     }
-
 
 }
 

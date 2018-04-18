@@ -80,7 +80,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        userName.setOnClickListener(new View.OnClickListener() {
+        profileNameEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 cancelImageCurrentLocation.setVisibility(View.VISIBLE);

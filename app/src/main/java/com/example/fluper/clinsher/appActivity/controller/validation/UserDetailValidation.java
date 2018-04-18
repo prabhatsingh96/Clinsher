@@ -19,6 +19,10 @@ public class UserDetailValidation {
     }
     //Email Validation
 
+    public static boolean isValidMobile(String phone) {
+        return android.util.Patterns.PHONE.matcher(phone).matches();
+    }
+
     public  boolean isValidEmail(String email){
 
         if (email.equals(""))

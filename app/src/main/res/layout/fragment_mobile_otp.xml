@@ -1,4 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,7 +11,7 @@
 
     <RelativeLayout
         android:id="@+id/tool_layout_mobile_otp_fragment"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="70dp">
 
@@ -43,7 +47,7 @@
         android:textStyle="bold"
         android:textColor="@color/colorBlack"
         android:alpha=".8"
-        android:layout_marginLeft="33dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -58,20 +62,24 @@
         android:layout_below="@+id/tv_show_text_rcv"
         android:layout_marginTop="34dp">
 
-        <EditText
+        <TextView
             android:inputType="number"
             android:id="@+id/et_one"
-             android:layout_weight="1"
+            android:layout_weight="1"
             android:maxLength="1"
+            android:editable="false"
             android:focusable="true"
             android:gravity="center"
+            android:layout_marginBottom="2dp"
             android:singleLine="true"
             android:imeOptions="actionDone"
             android:background="@drawable/btn_custom_signup_with_linkedin"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
-        <EditText
+        <TextView
+            android:editable="false"
+            android:layout_marginBottom="2dp"
             android:inputType="number"
             android:id="@+id/et_two"
             android:singleLine="true"
@@ -84,11 +92,13 @@
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/et_three"
+            android:layout_marginBottom="2dp"
             android:maxLength="1"
             android:gravity="center"
             android:singleLine="true"
+            android:editable="false"
             android:inputType="number"
             android:imeOptions="actionNext"
             android:layout_marginLeft="10dp"
@@ -97,10 +107,12 @@
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
-        <EditText
+        <TextView
+            android:layout_marginBottom="2dp"
             android:id="@+id/et_four"
             android:maxLength="1"
             android:singleLine="true"
+            android:editable="false"
             android:imeOptions="actionNext"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
@@ -110,9 +122,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
-        <EditText
+        <TextView
+            android:layout_marginBottom="2dp"
             android:id="@+id/et_five"
             android:maxLength="1"
+            android:editable="false"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:singleLine="true"
@@ -159,3 +173,4 @@
 
     </RelativeLayout>
 </RelativeLayout>
+</layout>
