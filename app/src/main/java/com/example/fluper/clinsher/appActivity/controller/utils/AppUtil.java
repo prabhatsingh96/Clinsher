@@ -33,6 +33,7 @@ public class AppUtil {
 
     public static void dismiss(Context context){
         prd.dismiss ();
+
     }
 
 }

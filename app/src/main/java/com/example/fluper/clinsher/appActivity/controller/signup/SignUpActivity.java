@@ -305,7 +305,8 @@ public class SignUpActivity extends AppCompatActivity implements AppUtil.setOnLi
     }
 
     private String getRealPathFromURIPath(Uri contentURI, Activity activity) {
-        Cursor cursor = activity.getContentResolver ().query (contentURI, null,
+        Cursor cursor = null;
+        cursor = activity.getContentResolver ().query (contentURI, null,
                 null, null, null);
         if (cursor == null) {
             return contentURI.getPath ();
